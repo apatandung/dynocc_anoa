@@ -46,3 +46,10 @@ years = matrix(years, nrow(y), 5, byrow=TRUE) ## 5 years
 det_list = list(year = as.matrix(years),
                 curah_hujan = as.matrix(presipitasi), 
                 ancaman=as.matrix(ancaman))
+
+#Make data frame for dynamic/multi season occu using "unmarkedMultFrame"
+umf_anoa = unmarkedMultFrame(y=y,
+                             siteCovs = data.frame(elevation, jar_jalan, slope, jar_sungai, jar_mukim),
+                             obsCovs = list(effort=effort),
+                             yearlySiteCovs = det_list,
+                             numPrimary=5)
