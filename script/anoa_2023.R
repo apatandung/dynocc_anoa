@@ -13,3 +13,6 @@ library(ggplot2) # for plotting
 library(unmarked) # for occupancy models
 library(AICcmodavg) # For GOF tests
 library(raster) # for mapping 
+
+#===========SET WD(Directory Kerja)
+setwd("D:\\analisis\\dynocc_anoa\\dynocc_anoa")
