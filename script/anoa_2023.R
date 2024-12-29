@@ -53,3 +53,5 @@ umf_anoa = unmarkedMultFrame(y=y,
                              obsCovs = list(effort=effort),
                              yearlySiteCovs = det_list,
                              numPrimary=5)
+
+## FITTING MODEL 
